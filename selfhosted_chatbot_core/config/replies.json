@@ -1,0 +1,30 @@
+{
+  "intents": [
+    {
+      "match": [
+        "hello",
+        "hi",
+        "chào",
+        "xin chào"
+      ],
+      "reply": "Chào bạn! Mình có thể hỗ trợ gì hôm nay?"
+    },
+    {
+      "match": [
+        "price",
+        "giá",
+        "báo giá"
+      ],
+      "reply": "Bảng giá: https://example.com/pricing"
+    },
+    {
+      "match": [
+        "support",
+        "hỗ trợ",
+        "help"
+      ],
+      "reply": "Bạn mô tả vấn đề, mình sẽ cố gắng trợ giúp nhanh nhất."
+    }
+  ],
+  "fallback": "Cám ơn bạn đã nhắn tin! Team sẽ phản hồi sớm nhất."
+}

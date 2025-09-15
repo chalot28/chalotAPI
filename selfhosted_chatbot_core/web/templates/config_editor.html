@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chỉnh sửa {{ title }}</h1>
+    <nav>
+      <a href="/">Dashboard</a>
+    </nav>
+    <form method="post">
+      <textarea name="content" rows="28" spellcheck="false">{{ content }}</textarea>
+      <button type="submit">Lưu</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash">{% for m in messages %}<li>{{ m }}</li>{% endfor %}</ul>
+      {% endif %}
+    {% endwith %}
+  </div>
+</body>
+</html>

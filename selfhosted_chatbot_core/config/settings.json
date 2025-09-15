@@ -1,0 +1,20 @@
+{
+  "bot_name": "SelfHostedChatbot",
+  "poll_interval_seconds": 3,
+  "connector": "telegram",
+  "logging_level": "INFO",
+  "admin_password": "admin",
+  "canary_enabled": true,
+  "canary_message": "ping",
+  "canary_interval_minutes": 10,
+  "ai": {
+    "enabled": true,
+    "provider": "gemini",
+    "model": "gemini-1.5-flash-latest",
+    "api_url": "https://generativelanguage.googleapis.com/v1beta/models",
+    "system_prompt": "Bạn là trợ lý thân thiện. Trả lời ngắn gọn, rõ ràng, tiếng Việt."
+        }
+
+}
+
+

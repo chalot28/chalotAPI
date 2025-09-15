@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trạng thái bot</h1>
+    <nav>
+      <a href="/">Dashboard</a> |
+      <a href="/config/replies">Sửa replies.json</a> |
+      <a href="/config/settings">Sửa settings.json</a> |
+      <a href="/config/credentials">Sửa credentials.json</a> |
+      <a href="/download/log">Tải bot.log</a> |
+      <a href="/logout">Đăng xuất</a>
+    </nav>
+    <h2>Cấu hình</h2>
+    <p>Connector: <b>{{ settings.get('connector') }}</b> | Poll: {{ settings.get('poll_interval_seconds') }}s</p>
+    <h2>Logs gần đây</h2>
+    <pre class="log">
+{{ "".join(logs) }}
+    </pre>
+  </div>
+</body>
+</html>
